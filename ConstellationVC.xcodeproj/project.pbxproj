@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA983BC519CD5C7100B4E4FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983BC419CD5C7100B4E4FE /* UIKit.framework */; };
+		CA983BC719CD5C7100B4E4FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983BC619CD5C7100B4E4FE /* Foundation.framework */; };
+		CA983BCD19CD5C7100B4E4FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA983BCB19CD5C7100B4E4FE /* InfoPlist.strings */; };
+		CA983BCF19CD5C7100B4E4FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BCE19CD5C7100B4E4FE /* main.m */; };
+		CA983BD319CD5C7100B4E4FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BD219CD5C7100B4E4FE /* AppDelegate.m */; };
+		CA983BF719CD687B00B4E4FE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BE119CD687B00B4E4FE /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BF819CD687B00B4E4FE /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BE419CD687B00B4E4FE /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BF919CD687B00B4E4FE /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BE619CD687B00B4E4FE /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFA19CD687B00B4E4FE /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BE819CD687B00B4E4FE /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFB19CD687B00B4E4FE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BEA19CD687B00B4E4FE /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFC19CD687B00B4E4FE /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BEC19CD687B00B4E4FE /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFD19CD687B00B4E4FE /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BF019CD687B00B4E4FE /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFE19CD687B00B4E4FE /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BF219CD687B00B4E4FE /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983BFF19CD687B00B4E4FE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983BF619CD687B00B4E4FE /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA983C0119CD68B900B4E4FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0019CD68B900B4E4FE /* SystemConfiguration.framework */; };
+		CA983C0319CD68BF00B4E4FE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0219CD68BF00B4E4FE /* CFNetwork.framework */; };
+		CA983C0519CD68CC00B4E4FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0419CD68CC00B4E4FE /* MobileCoreServices.framework */; };
+		CA983C0719CD690900B4E4FE /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0619CD690900B4E4FE /* libz.1.2.5.dylib */; };
+		CA983C0919CD691600B4E4FE /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0819CD691600B4E4FE /* libxml2.2.dylib */; };
+		CA983C0B19CD692100B4E4FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA983C0A19CD692100B4E4FE /* CoreGraphics.framework */; };
+		CA983C0E19CD70FB00B4E4FE /* ConstellationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983C0D19CD70FB00B4E4FE /* ConstellationRequest.m */; };
+		CA983C1219CD978800B4E4FE /* ConstellationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA983C1019CD978700B4E4FE /* ConstellationVC.m */; };
+		CA983C1319CD978800B4E4FE /* ConstellationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA983C1119CD978700B4E4FE /* ConstellationVC.xib */; };
+		CAB7903119CFB04C0047F1E7 /* Conste.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAB7903019CFB04C0047F1E7 /* Conste.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA983BC019CD5C7100B4E4FE /* ConstellationVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstellationVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA983BC419CD5C7100B4E4FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA983BC619CD5C7100B4E4FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA983BCA19CD5C7100B4E4FE /* ConstellationVC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConstellationVC-Info.plist"; sourceTree = "<group>"; };
+		CA983BCC19CD5C7100B4E4FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA983BCE19CD5C7100B4E4FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA983BD019CD5C7100B4E4FE /* ConstellationVC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConstellationVC-Prefix.pch"; sourceTree = "<group>"; };
+		CA983BD119CD5C7100B4E4FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA983BD219CD5C7100B4E4FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA983BE019CD687B00B4E4FE /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CA983BE119CD687B00B4E4FE /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		CA983BE219CD687B00B4E4FE /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		CA983BE319CD687B00B4E4FE /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		CA983BE419CD687B00B4E4FE /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		CA983BE519CD687B00B4E4FE /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		CA983BE619CD687B00B4E4FE /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		CA983BE719CD687B00B4E4FE /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		CA983BE819CD687B00B4E4FE /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		CA983BE919CD687B00B4E4FE /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		CA983BEA19CD687B00B4E4FE /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		CA983BEB19CD687B00B4E4FE /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		CA983BEC19CD687B00B4E4FE /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		CA983BED19CD687B00B4E4FE /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CA983BEE19CD687B00B4E4FE /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CA983BEF19CD687B00B4E4FE /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		CA983BF019CD687B00B4E4FE /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		CA983BF119CD687B00B4E4FE /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		CA983BF219CD687B00B4E4FE /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		CA983BF319CD687B00B4E4FE /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CA983BF519CD687B00B4E4FE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CA983BF619CD687B00B4E4FE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CA983C0019CD68B900B4E4FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CA983C0219CD68BF00B4E4FE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CA983C0419CD68CC00B4E4FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CA983C0619CD690900B4E4FE /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		CA983C0819CD691600B4E4FE /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CA983C0A19CD692100B4E4FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA983C0C19CD70FB00B4E4FE /* ConstellationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstellationRequest.h; sourceTree = "<group>"; };
+		CA983C0D19CD70FB00B4E4FE /* ConstellationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstellationRequest.m; sourceTree = "<group>"; };
+		CA983C0F19CD978700B4E4FE /* ConstellationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstellationVC.h; sourceTree = "<group>"; };
+		CA983C1019CD978700B4E4FE /* ConstellationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstellationVC.m; sourceTree = "<group>"; };
+		CA983C1119CD978700B4E4FE /* ConstellationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstellationVC.xib; sourceTree = "<group>"; };
+		CAB7903019CFB04C0047F1E7 /* Conste.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Conste.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA983BBD19CD5C7100B4E4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA983C0B19CD692100B4E4FE /* CoreGraphics.framework in Frameworks */,
+				CA983C0919CD691600B4E4FE /* libxml2.2.dylib in Frameworks */,
+				CA983C0719CD690900B4E4FE /* libz.1.2.5.dylib in Frameworks */,
+				CA983C0519CD68CC00B4E4FE /* MobileCoreServices.framework in Frameworks */,
+				CA983C0319CD68BF00B4E4FE /* CFNetwork.framework in Frameworks */,
+				CA983C0119CD68B900B4E4FE /* SystemConfiguration.framework in Frameworks */,
+				CA983BC519CD5C7100B4E4FE /* UIKit.framework in Frameworks */,
+				CA983BC719CD5C7100B4E4FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA983BB519CD5C7000B4E4FE = {
+			isa = PBXGroup;
+			children = (
+				CA983BDF19CD687B00B4E4FE /* ASIHttpRequest */,
+				CA983BC819CD5C7100B4E4FE /* ConstellationVC */,
+				CA983BC319CD5C7100B4E4FE /* Frameworks */,
+				CA983BC119CD5C7100B4E4FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA983BC119CD5C7100B4E4FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA983BC019CD5C7100B4E4FE /* ConstellationVC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA983BC319CD5C7100B4E4FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA983C0A19CD692100B4E4FE /* CoreGraphics.framework */,
+				CA983C0819CD691600B4E4FE /* libxml2.2.dylib */,
+				CA983C0619CD690900B4E4FE /* libz.1.2.5.dylib */,
+				CA983C0419CD68CC00B4E4FE /* MobileCoreServices.framework */,
+				CA983C0219CD68BF00B4E4FE /* CFNetwork.framework */,
+				CA983C0019CD68B900B4E4FE /* SystemConfiguration.framework */,
+				CA983BC419CD5C7100B4E4FE /* UIKit.framework */,
+				CA983BC619CD5C7100B4E4FE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA983BC819CD5C7100B4E4FE /* ConstellationVC */ = {
+			isa = PBXGroup;
+			children = (
+				CA983BD119CD5C7100B4E4FE /* AppDelegate.h */,
+				CA983BD219CD5C7100B4E4FE /* AppDelegate.m */,
+				CA983BC919CD5C7100B4E4FE /* Supporting Files */,
+				CA983C0C19CD70FB00B4E4FE /* ConstellationRequest.h */,
+				CA983C0D19CD70FB00B4E4FE /* ConstellationRequest.m */,
+				CA983C0F19CD978700B4E4FE /* ConstellationVC.h */,
+				CA983C1019CD978700B4E4FE /* ConstellationVC.m */,
+				CA983C1119CD978700B4E4FE /* ConstellationVC.xib */,
+				CAB7903019CFB04C0047F1E7 /* Conste.plist */,
+			);
+			path = ConstellationVC;
+			sourceTree = "<group>";
+		};
+		CA983BC919CD5C7100B4E4FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA983BCA19CD5C7100B4E4FE /* ConstellationVC-Info.plist */,
+				CA983BCB19CD5C7100B4E4FE /* InfoPlist.strings */,
+				CA983BCE19CD5C7100B4E4FE /* main.m */,
+				CA983BD019CD5C7100B4E4FE /* ConstellationVC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA983BDF19CD687B00B4E4FE /* ASIHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CA983BE019CD687B00B4E4FE /* ASIAuthenticationDialog.h */,
+				CA983BE119CD687B00B4E4FE /* ASIAuthenticationDialog.m */,
+				CA983BE219CD687B00B4E4FE /* ASICacheDelegate.h */,
+				CA983BE319CD687B00B4E4FE /* ASIDataCompressor.h */,
+				CA983BE419CD687B00B4E4FE /* ASIDataCompressor.m */,
+				CA983BE519CD687B00B4E4FE /* ASIDataDecompressor.h */,
+				CA983BE619CD687B00B4E4FE /* ASIDataDecompressor.m */,
+				CA983BE719CD687B00B4E4FE /* ASIDownloadCache.h */,
+				CA983BE819CD687B00B4E4FE /* ASIDownloadCache.m */,
+				CA983BE919CD687B00B4E4FE /* ASIFormDataRequest.h */,
+				CA983BEA19CD687B00B4E4FE /* ASIFormDataRequest.m */,
+				CA983BEB19CD687B00B4E4FE /* ASIHTTPRequest.h */,
+				CA983BEC19CD687B00B4E4FE /* ASIHTTPRequest.m */,
+				CA983BED19CD687B00B4E4FE /* ASIHTTPRequestConfig.h */,
+				CA983BEE19CD687B00B4E4FE /* ASIHTTPRequestDelegate.h */,
+				CA983BEF19CD687B00B4E4FE /* ASIInputStream.h */,
+				CA983BF019CD687B00B4E4FE /* ASIInputStream.m */,
+				CA983BF119CD687B00B4E4FE /* ASINetworkQueue.h */,
+				CA983BF219CD687B00B4E4FE /* ASINetworkQueue.m */,
+				CA983BF319CD687B00B4E4FE /* ASIProgressDelegate.h */,
+				CA983BF419CD687B00B4E4FE /* Reachability */,
+			);
+			path = ASIHttpRequest;
+			sourceTree = "<group>";
+		};
+		CA983BF419CD687B00B4E4FE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CA983BF519CD687B00B4E4FE /* Reachability.h */,
+				CA983BF619CD687B00B4E4FE /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA983BBF19CD5C7100B4E4FE /* ConstellationVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA983BD619CD5C7100B4E4FE /* Build configuration list for PBXNativeTarget "ConstellationVC" */;
+			buildPhases = (
+				CA983BBC19CD5C7100B4E4FE /* Sources */,
+				CA983BBD19CD5C7100B4E4FE /* Frameworks */,
+				CA983BBE19CD5C7100B4E4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConstellationVC;
+			productName = ConstellationVC;
+			productReference = CA983BC019CD5C7100B4E4FE /* ConstellationVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA983BB719CD5C7000B4E4FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CA983BBA19CD5C7000B4E4FE /* Build configuration list for PBXProject "ConstellationVC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA983BB519CD5C7000B4E4FE;
+			productRefGroup = CA983BC119CD5C7100B4E4FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA983BBF19CD5C7100B4E4FE /* ConstellationVC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA983BBE19CD5C7100B4E4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA983BCD19CD5C7100B4E4FE /* InfoPlist.strings in Resources */,
+				CA983C1319CD978800B4E4FE /* ConstellationVC.xib in Resources */,
+				CAB7903119CFB04C0047F1E7 /* Conste.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA983BBC19CD5C7100B4E4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA983BCF19CD5C7100B4E4FE /* main.m in Sources */,
+				CA983BD319CD5C7100B4E4FE /* AppDelegate.m in Sources */,
+				CA983BF719CD687B00B4E4FE /* ASIAuthenticationDialog.m in Sources */,
+				CA983BF819CD687B00B4E4FE /* ASIDataCompressor.m in Sources */,
+				CA983BF919CD687B00B4E4FE /* ASIDataDecompressor.m in Sources */,
+				CA983BFA19CD687B00B4E4FE /* ASIDownloadCache.m in Sources */,
+				CA983BFB19CD687B00B4E4FE /* ASIFormDataRequest.m in Sources */,
+				CA983BFC19CD687B00B4E4FE /* ASIHTTPRequest.m in Sources */,
+				CA983BFD19CD687B00B4E4FE /* ASIInputStream.m in Sources */,
+				CA983BFE19CD687B00B4E4FE /* ASINetworkQueue.m in Sources */,
+				CA983BFF19CD687B00B4E4FE /* Reachability.m in Sources */,
+				CA983C0E19CD70FB00B4E4FE /* ConstellationRequest.m in Sources */,
+				CA983C1219CD978800B4E4FE /* ConstellationVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA983BCB19CD5C7100B4E4FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA983BCC19CD5C7100B4E4FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA983BD419CD5C7100B4E4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA983BD519CD5C7100B4E4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA983BD719CD5C7100B4E4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConstellationVC/ConstellationVC-Prefix.pch";
+				INFOPLIST_FILE = "ConstellationVC/ConstellationVC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA983BD819CD5C7100B4E4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConstellationVC/ConstellationVC-Prefix.pch";
+				INFOPLIST_FILE = "ConstellationVC/ConstellationVC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA983BBA19CD5C7000B4E4FE /* Build configuration list for PBXProject "ConstellationVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA983BD419CD5C7100B4E4FE /* Debug */,
+				CA983BD519CD5C7100B4E4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA983BD619CD5C7100B4E4FE /* Build configuration list for PBXNativeTarget "ConstellationVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA983BD719CD5C7100B4E4FE /* Debug */,
+				CA983BD819CD5C7100B4E4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA983BB719CD5C7000B4E4FE /* Project object */;
+}
